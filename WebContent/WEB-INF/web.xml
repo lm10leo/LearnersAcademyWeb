@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  
+  
+  
+  <display-name>LearnersAcademyWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ProcessSubject</servlet-name>
+    <servlet-class>com.learneracademy.ProcessSubject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProcessSubject</servlet-name>
+    <url-pattern>/processSubject</url-pattern>
+       
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddTeacher</servlet-name>
+  <servlet-class>com.learneracademy.AddTeacher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddTeacher</servlet-name>
+  <url-pattern>/teachers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ListTeachers</servlet-name>
+  <servlet-class>com.learneracademy.ListTeachers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ListTeachers</servlet-name>
+  <url-pattern>/listofteachers</url-pattern>
+  </servlet-mapping>
+  
+  
+<servlet>
+    <servlet-name>AddClass</servlet-name>
+    <servlet-class>com.learneracademy.AddClass</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddClass</servlet-name>
+    <url-pattern>/setupClass</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ListStudents</servlet-name>
+  <servlet-class>com.learneracademy.ListStudents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ListStudents</servlet-name>
+  <url-pattern>/listofstudents</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Class_Subject</servlet-name>
+  <servlet-class>com.learneracademy.Class_Subject</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Class_Subject</servlet-name>
+  <url-pattern>/assignclasssubject</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+  <servlet-name>TeacherAssignmentsServlet</servlet-name>
+  <servlet-class>com.learneracademy.TeacherAssignmentsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>TeacherAssignmentsServlet</servlet-name>
+  <url-pattern>/assignment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ListSubjects</servlet-name>
+  <servlet-class>com.learneracademy.ListSubjects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ListSubjects</servlet-name>
+  <url-pattern>/listofsubjects</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ViewClassReport</servlet-name>
+  <servlet-class>com.learneracademy.ViewClassReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ViewClassReport</servlet-name>
+  <url-pattern>/viewreport</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.learneracademy.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  
+  
+</web-app>
+
